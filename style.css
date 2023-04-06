@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+            CUSTOM VARIABLES
+=============================== */
+
+:root {
+
+    /**** colors ****/
+    --white: #EEEEEE;
+    --navy: #1B244A;
+    --green: rgb(43, 255, 0);
+    --light-blue: #9AABD8;
+    --red: #F94F6D;
+    --black: #080001;
+   
+}
+
+/* ============================
+            BUTTONS
+=============================== */
+
+.add-btn {
+    background-color: transparent;
+    border: 1px solid var(--light-blue);
+    color:  #fff;
+    border-radius: 7px;
+    padding: 20px;
+    margin-right: 10px;
+    width: 70px;
+    height: 60px;
+    margin: auto;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    background-color:#411385;
+    color: white;
+}
+
+.reset-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.reset-btn:hover {
+    cursor: pointer;
+    background-color:#411385;
+    color: white;
+}
+
+
+
+body {
+    background: #4C1D95;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    /* min-width: 37.5rem; */
+    padding: 1rem;
+    gap: 2rem;
+    margin: auto;
+}
+
+
+.score-container {
+    background-color: var(--black);
+    text-align: center;
+    border-radius:15px;
+    width: 300px;
+    height: 250px;
+}
+
+.home-button-wrapper,
+.guest-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-scoreboard,
+.guest-scoreboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+.score{
+    font-size: 90px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F94F6D;
+}
+/* ============================
+            MEDIA QUERIES
+=============================== */
+
+/*===== DESKTOP & TABLET MODE =====*/
+@media (min-width: 610px) {
+
+    .container {
+        flex-direction: row;
+        gap: 0;
+        height: 100vh;
+    }
+
+    .button-wrapper {
+        justify-content: space-around;
+
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    .add-btn {
+        font-size: 2.4rem;
+    }
+
+    .reset-btn {
+        font-size: 1.4rem;
+        padding: 1.4rem;
+    }
+
+    .home-scoreboard,
+    .guest-scoreboard {
+        gap: 3rem;
+    }
+
+}

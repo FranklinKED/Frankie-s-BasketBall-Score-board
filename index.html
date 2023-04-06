@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet"> 
+        
+    <title>Frankie's Basketball scoreborad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+
+        <!-- HOME SCORE -->
+        <div class="home-scoreboard">
+            <h1 id="home-title">HOME</h1>
+            <div class="score-container">
+                <p id="home-score" class="score">0</p>
+            </div>
+            <div class="home-button-wrapper">
+                <button id="add-1-home" data-home-point="1" class="add-btn" aria-label="add one point to home score">+1</button>
+                <button id="add-2-home" data-home-point="2" class="add-btn" aria-label="add two points to home score">+2</button>
+                <button id="add-3-home" data-home-point="3" class="add-btn" aria-label="add three points to home score">+3</button>
+            </div>
+        </div>
+        <button id="reset-game" class="reset-btn">RESET GAME</button>
+        
+        <!-- GUEST SCORE -->
+        <div class="guest-scoreboard">
+            <h1 id="guest-title">GUEST</h1>
+            <div class="score-container">
+                <p id="guest-score" aria-describedby="total guest score" class="score">0</p>
+            </div>
+            <div class="guest-button-wrapper">
+                <button id="add-1-guest" data-guest-point="1" class="add-btn" aria-label="add one point to guest score">+1</button>
+                <button id="add-2-guest" data-guest-point="2" class="add-btn" aria-label="add two points to guest score">+2</button>
+                <button id="add-3-guest" data-guest-point="3" class="add-btn" aria-label="add three points to guest score">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</body>
+</html>
